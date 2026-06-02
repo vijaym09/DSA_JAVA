@@ -1,3 +1,5 @@
+// This is Table printing code
+
 class TwoTablePrint{
     static void PrintTWoTable(){
         for(int i=1;i<=10;i++){
