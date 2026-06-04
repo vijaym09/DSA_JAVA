@@ -1,5 +1,5 @@
 
-class Reverse1{
+class Reverse2{
    static  String str ="satasyy";
    static boolean check=true;
   public static void main(String[] args) {
