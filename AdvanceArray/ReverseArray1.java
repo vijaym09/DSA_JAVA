@@ -1,6 +1,6 @@
-class ReverseArray{
+public class ReverseArray1 {
     public static void main(String[] args) {
-        int arr[]={2,3,4,5,6};
+        int arr[]={1,2,3,4,5};
         int i=0;
         int j=arr.length-1;
         while(i<=j){
@@ -8,15 +8,11 @@ class ReverseArray{
             arr[i]=arr[j];
             arr[j]=temp;
             i++;
-            j--; 
+            j--;
         }
-        for(i=0;i<arr.length;i++){
-            System.out.println(arr[i]);
-        }
-/*
-        for(int k=arr.length-1;k>=0;k--){
+        for(int k=0;k<=arr.length-1;k++){
             System.out.println(arr[k]);
         }
-            */
     }
+    
 }
