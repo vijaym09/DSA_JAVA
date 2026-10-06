@@ -4,26 +4,26 @@ public class FindPivot {
 
         int n = nums.length;
 
-        int[] leftSum = new int[n];
-        int[] rightSum = new int[n];
+        int[] leftSum =new int[n];
+        int[] rightSum=new int[n];
 
-        // Fill left sum array
-        leftSum[0] = nums[0];
+        // Fill the left sum first
+        leftSum[0]=nums[0];
 
-        for (int i = 1; i < n; i++) {
-            leftSum[i] = leftSum[i - 1] + nums[i];
+        for (int i=1;i<n;i++) {
+            leftSum[i]=leftSum[i-1]+nums[i];
         }
 
-        // Fill right sum array
-        rightSum[n - 1] = nums[n - 1];
+        // Fill the right sum first
+        rightSum[n-1]=nums[n-1];
 
         for (int i = n - 2; i >= 0; i--) {
             rightSum[i] = rightSum[i + 1] + nums[i];
         }
 
         // Check for equality
-        for (int i = 0; i < n; i++) {
-            if (leftSum[i] == rightSum[i]) {
+        for (int i=0;i<n;i++) {
+            if (leftSum[i]==rightSum[i]) {
                 return i;
             }
         }
