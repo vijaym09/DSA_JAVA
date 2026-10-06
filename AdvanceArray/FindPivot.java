@@ -1,4 +1,4 @@
-public class FindPivotgkit gki {
+public class FindPivot {
 
     public static int pivotIndex(int[] nums) {
 
