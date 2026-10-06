@@ -6,9 +6,12 @@ public class RemoveDuplicate{
         int n=arr.length;
         while(j<n){
             if(arr[i]!=arr[j]){
+                //Aage badhaao
                 i++;
+                //i index par j ki value daldo
                 arr[i]=arr[j];
             }
+            //aage badhaao
             j++;
         }
         return i+1;
