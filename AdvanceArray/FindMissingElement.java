@@ -21,10 +21,11 @@ public class FindMissingElement {
         }
 
         // Traverse array
+        
         // Whenever we find a positive value,
 
         // the number at this index is missing
-        for (int i = 0; i < n; i++) {
+        for (int i=0;i<n;i++) {
             if (nums[i] > 0) {
                 int valueAtThisIndex = i + 1;
                 ans.add(valueAtThisIndex);
