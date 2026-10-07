@@ -16,7 +16,7 @@ public class FindMissingElement {
 
             // Mark this position
             if (nums[position] > 0) {
-                nums[position] = -nums[position];
+                nums[position]=-nums[position];
             }
         }
 
@@ -30,7 +30,6 @@ public class FindMissingElement {
                 ans.add(valueAtThisIndex);
             }
         }
-
         return ans;
     }
 
