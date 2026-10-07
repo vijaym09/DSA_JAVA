@@ -8,12 +8,10 @@ public class FindMissingElement {
 
         // Marking
         int n = nums.length;
-
         for (int index = 0; index < n; index++) {
 
             int value = Math.abs(nums[index]);
             int position = value - 1;
-
             // Mark this position
             if (nums[position] > 0) {
                 nums[position]=-nums[position];
@@ -21,9 +19,7 @@ public class FindMissingElement {
         }
 
         // Traverse array
-        
         // Whenever we find a positive value,
-
         // the number at this index is missing
         for (int i=0;i<n;i++) {
             if (nums[i] > 0) {
