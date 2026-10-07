@@ -2,7 +2,7 @@ import java.util.*;
 
 public class FindMissingElement {
 
-    public static List<Integer> findDisappearedNumbers(int[] nums) {
+    public static List<Integer>findDisappearedNumbers(int[] nums) {
 
         List<Integer> ans = new ArrayList<>();
 
@@ -22,11 +22,10 @@ public class FindMissingElement {
 
         // Traverse array
         // Whenever we find a positive value,
+
         // the number at this index is missing
         for (int i = 0; i < n; i++) {
-
             if (nums[i] > 0) {
-
                 int valueAtThisIndex = i + 1;
                 ans.add(valueAtThisIndex);
             }
@@ -40,7 +39,6 @@ public class FindMissingElement {
         int[] nums = {4, 3, 2, 7, 8, 2, 3, 1};
 
         List<Integer> result = findDisappearedNumbers(nums);
-
         System.out.println(result);
     }
 }
