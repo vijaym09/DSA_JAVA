@@ -4,13 +4,13 @@ public class FindDuplicate {
 
     public static int findDuplicate(int[] nums) {
 
-        for (int i = 0; i < nums.length; i++) {
+        for (int i=0;i<nums.length;i++) {
 
-            int value = Math.abs(nums[i]);
-            int position = value - 1;
+            int value=Math.abs(nums[i]);
+            int position=value-1;
 
             // If already negative, this number is duplicate
-            if (nums[position] < 0) {
+            if (nums[position]<0) {
                 return value;
             }
 
