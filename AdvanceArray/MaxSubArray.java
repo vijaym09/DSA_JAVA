@@ -6,13 +6,13 @@ public class MaxSubArray {
 
         for (int i = 0; i < nums.length; i++) {
 
-            // Add current element
+            // Add current element, update
             sum = sum + nums[i];
 
-            // Update maximum sum
+            // Update maximum sum, take max
             maxi = Math.max(maxi, sum);
 
-            // If sum becomes negative, reset it
+            // If sum becomes negative, reset it to zero
             if (sum < 0) {
                 sum = 0;
             }
