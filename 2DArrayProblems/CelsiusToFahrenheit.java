@@ -5,6 +5,7 @@ public class CelsiusToFahrenheit {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter value in celsius: ");
         float n=sc.nextInt();
+        
 
         //logic
         float fahrenheit=(n*9/5)+32;
