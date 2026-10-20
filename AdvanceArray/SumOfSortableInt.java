@@ -8,9 +8,9 @@ public class SumOfSortableInt {
         int[] sorted = nums.clone();
         Arrays.sort(sorted);
 
-        int ans = 0;
+        int ans=0;
 
-        for (int k = 1; k <= n; k++) {
+        for (int k= 1; k <= n; k++) {
             if (n % k != 0) {
                 continue;
             }
