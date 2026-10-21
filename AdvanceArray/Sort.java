@@ -17,7 +17,7 @@ public class Sort{
             return 0;
         }
 
-        // Check whether all characters are the same
+        
         boolean allSame = true;
         for (int i = 1; i < n; i++) {
             if (s.charAt(i) != s.charAt(0)) {
