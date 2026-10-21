@@ -12,6 +12,7 @@ public class Sort{
             }
         }
 
+        //Condition for sorted 
         if (sorted) {
             return 0;
         }
