@@ -13,7 +13,7 @@ public class SecondLargest {
                 largest = num;
             }
             else if (num > secondLargest && num != largest) {
-                secondLargest = num;
+                secondLargest=num;
             }
         }
 
