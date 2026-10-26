@@ -7,11 +7,10 @@ public class PivotIndex {
         for (int num : nums) {
             totalSum += num;
         }
-
         for (int i = 0; i < nums.length; i++) {
             int rightSum = totalSum - leftSum - nums[i];
 
-            if (leftSum == rightSum) {
+            if (leftSum==rightSum) {
                 return i;
             }
 
@@ -23,7 +22,6 @@ public class PivotIndex {
 
     public static void main(String[] args) {
         int[] nums = {1, 7, 3, 6, 5, 6};
-
         System.out.println(pivotIndex(nums));
     }
 }
