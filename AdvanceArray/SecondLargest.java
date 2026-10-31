@@ -1,26 +1,28 @@
+
 public class SecondLargest {
+
     public static void main(String[] args) {
 
-        int[] nums = {10, 5, 8, 20, 15};
+        int[] arr = {10, 5, 20, 8, 20};
 
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
 
-        for (int num : nums) {
+        for (int i = 0; i < arr.length; i++) {
 
-            if (num > largest) {
+            if (arr[i] > largest) {
                 secondLargest = largest;
-                largest = num;
+                largest = arr[i];
             }
-            else if (num > secondLargest && num != largest) {
-                secondLargest=num;
+            else if (arr[i] > secondLargest && arr[i] != largest) {
+                secondLargest = arr[i];
             }
         }
 
         if (secondLargest == Integer.MIN_VALUE) {
-            System.out.println(-1);
+            System.out.println("Second largest element not found");
         } else {
-            System.out.println("Second largest: " + secondLargest);
+            System.out.println("Second Largest: " + secondLargest);
         }
     }
 }
