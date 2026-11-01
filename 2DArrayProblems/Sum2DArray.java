@@ -1,7 +1,7 @@
 class Sum2DArray{
     public static int SumArray(int arr[][]){
-        int m=arr.length;
-        int n=arr[0].length;
+        int m=arr.length; // How many rows are inside the array
+        int n=arr[0].length; // How many elements are inside this row
         int sum=0;
 
         for(int i = 0; i < m; i++){
