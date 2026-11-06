@@ -8,13 +8,13 @@ public class DistanceArray {
 
         int count = 0;
 
-        for (int i = 0; i < arr1.length; i++) {
+        for (int i = 0; i<arr1.length;i++) {
 
             boolean valid = true;
 
             for (int j = 0; j < arr2.length; j++) {
 
-                if (Math.abs(arr1[i] - arr2[j]) <= d) {
+                if (Math.abs(arr1[i]-arr2[j]) <= d) {
                     valid = false;
                     break;
                 }
