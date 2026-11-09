@@ -6,9 +6,10 @@ class Arrays1{
         for(int i=0;i<n;i++){
             if(arr[i]<minValue){
                 minValue=arr[i];
-
             }
         }
+
+        
         System.out.println("minValue: "+minValue);
     }
 }
