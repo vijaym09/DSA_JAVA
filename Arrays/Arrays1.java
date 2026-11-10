@@ -8,8 +8,6 @@ class Arrays1{
                 minValue=arr[i];
             }
         }
-
-        
         System.out.println("minValue: "+minValue);
     }
 }
